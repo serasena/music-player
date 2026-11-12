@@ -1,11 +1,11 @@
 :root {
     /* colors */
-    --primary-color: #dfdfe2;
-    --secondary-color: #ffffff;
-    --app-background-color: #4d4d62;
-    --background-color: #1b1b32;
-    --foreground-color: #3b3b4f;
-    --highlight-color: #f1be32;
+    --primary-color: #dbdbdb;
+    --secondary-color: #fbd0ff;
+    --app-background-color: #170f1d;
+    --background-color: #301341;
+    --foreground-color: #20011a;
+    --highlight-color: #ffde21;
 
     /* font sizes */
     --root-font-size: 16px;

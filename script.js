@@ -8,40 +8,174 @@ const songArtist = document.getElementById("player-song-artist");
 const allSongs = [
   {
     id: 0,
-    title: "Hello World",
-    artist: "Rafael",
-    duration: "0:23",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/hello-world.mp3",
+    title: "The Fallen",
+    album: "8-bit",
+    artist: "Sena",
+    duration: "00:44",
+    src: "assets/musics/8bit/the_fallen.mp3",
   },
   {
     id: 1,
-    title: "In the Zone",
-    artist: "Rafael",
-    duration: "0:11",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/in-the-zone.mp3",
+    title: "The First Sin",
+    album: "8-bit",
+    artist: "Sena",
+    duration: "00:32",
+    src: "assets/musics/8bit/the-first-sin.mp3",
   },
   {
     id: 2,
-    title: "Camper Cat",
-    artist: "Rafael",
-    duration: "0:21",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/camper-cat.mp3",
+    title: "Balance",
+    album: "Darkness And Flowers",
+    artist: "Sena",
+    duration: "00:48",
+    src: "assets/musics/darkness-and-flowers/balance.mp3",
   },
   {
     id: 3,
-    title: "Electronic",
-    artist: "Rafael",
-    duration: "0:15",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/electronic.mp3",
+    title: "Bloom",
+    album: "Darkness And Flowers",
+    artist: "Sena",
+    duration: "00:45",
+    src: "assets/musics/darkness-and-flowers/bloom.mp3",
   },
   {
     id: 4,
-    title: "Sailing Away",
-    artist: "Rafael",
-    duration: "0:22",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3",
+    title: "Farewell",
+    album: "Darkness And Flowers",
+    artist: "Sena",
+    duration: "02:07",
+    src: "assets/musics/darkness-and-flowers/farewell.mp3",
+  },
+  {
+    id: 5,
+    title: "First Sight",
+    album: "Darkness And Flowers",
+    artist: "Sena",
+    duration: "01:16",
+    src: "assets/musics/darkness-and-flowers/first-sight.mp3",
+  },
+  {
+    id: 6,
+    title: "Lament",
+    album: "Darkness And Flowers",
+    artist: "Sena",
+    duration: "01:16",
+    src: "assets/musics/darkness-and-flowers/lament.mp3",
+  },
+  {
+    id: 7,
+    title: "Stay",
+    album: "Darkness And Flowers",
+    artist: "Sena",
+    duration: "00:57",
+    src: "assets/musics/darkness-and-flowers/stay.mp3",
+  },
+  {
+    id: 8,
+    title: "All Men Must Die",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "01:42",
+    src: "assets/musics/undefined/all-men-must-die.mp3",
+  },
+  {
+    id: 9,
+    title: "Alt - Happy Birtday Violin",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "01:16",
+    src: "assets/musics/undefined/alt-happy-birthday-violin.mp3",
+  },
+  {
+    id: 10,
+    title: "Boat",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:22",
+    src: "assets/musics/undefined/boat.mp3",
+  },
+  {
+    id: 11,
+    title: "Cellolin",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "01:12",
+    src: "assets/musics/undefined/cellolin.mp3",
+  },
+  {
+    id: 12,
+    title: "Cute Cafe",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:13",
+    src: "assets/musics/undefined/cute-cafe.mp3",
+  }, {
+    id: 13,
+    title: "Elite",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:40",
+    src: "assets/musics/undefined/elite.mp3",
+  }, {
+    id: 14,
+    title: "Fickle Gaze",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:48",
+    src: "assets/musics/undefined/fickle-gaze.mp3",
+  }, {
+    id: 15,
+    title: "Field",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:29",
+    src: "assets/musics/undefined/field.mp3",
+  }, {
+    id: 16,
+    title: "Galaxy",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:14",
+    src: "assets/musics/undefined/galaxy.mp3",
+  }, {
+    id: 17,
+    title: "Lost Magik",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:20",
+    src: "assets/musics/undefined/lost-magik.mp3",
+  }, {
+    id: 18,
+    title: "Reunited",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:12",
+    src: "assets/musics/undefined/reunited.mp3",
+  }, {
+    id: 19,
+    title: "Solitary Piano v1",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:16",
+    src: "assets/musics/undefined/solitary-piano.mp3",
+  }, {
+    id: 20,
+    title: "Solitary Piano v2",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "01:04",
+    src: "assets/musics/undefined/solitary-piano-v2.mp3",
+  }, {
+    id: 21,
+    title: "Wise Hands Rotten Head",
+    album: "Undefined",
+    artist: "Sena",
+    duration: "00:57",
+    src: "assets/musics/undefined/wise-hands-rotten-head.mp3",
   },
 ];
+
+loadSongs();
 
 const audio = new Audio();
 
@@ -51,7 +185,7 @@ const userData = {
   songCurrentTime: 0,
 };
 
-const playSong = (id, start=true) => {
+const playSong = (id, start = true) => {
   const song = userData.songs.find((song) => song.id === id);
   audio.src = song.src;
   audio.title = song.title;
@@ -122,7 +256,7 @@ const highlightCurrentSong = () => {
   const songToHighlight = document.getElementById(
     `song-${userData.currentSong?.id}`
   );
-  
+
   songToHighlight?.setAttribute("aria-current", "true");
 };
 
@@ -156,3 +290,22 @@ nextButton.addEventListener("click", playNextSong);
 previousButton.addEventListener("click", playPreviousSong);
 
 audio.addEventListener("ended", playNextSong);
+
+function loadSongs() {
+  playlistSongs.innerHTML = ""
+
+  for (let i = 0; i < allSongs.length; i++) {
+    playlistSongs.innerHTML +=
+      `
+        <li id="song-${i}" class="playlist-song">
+          <button class="playlist-song-info" >
+            <span class="playlist-song-title">${allSongs[i].title}</span>
+            <span class="playlist-song-artist">${allSongs[i].artist}</span>
+            <span class="playlist-song-duration">${allSongs[i].duration}</span>
+          </button>
+        </li>
+    `
+
+    // add - <span class="playlist-song-album">${allSongs[i].album}</span>
+  }
+}
